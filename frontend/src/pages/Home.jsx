@@ -492,7 +492,7 @@ const mlAndDataScienceSkills = [
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">🔧 Tools & Technology</h2>
-            <p className="text-gray-400">Backend technologies I work with</p>
+            <p className="text-gray-400">Technologies I work with</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-16">
