@@ -491,7 +491,7 @@ const mlAndDataScienceSkills = [
       <section id="skills" className="py-20 px-6 bg-gray-900/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">🔧 Tools & Technologi</h2>
+            <h2 className="text-4xl font-bold mb-4">🔧 Tools & Technology</h2>
             <p className="text-gray-400">Backend technologies I work with</p>
           </div>
 
