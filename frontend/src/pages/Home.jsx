@@ -52,7 +52,13 @@ export default function ModernPortfolio() {
       description: 'An interactive web app built with Streamlit that extracts the 8 most dominant colors from an uploaded image using K-Means Clustering. It displays the results in a clean color palette with both HEX and RGB formats. Ideal for designers, developers, or anyone looking to generate consistent color themes from visuals. Tech stack: Python, Streamlit, OpenCV, scikit-learn, Matplotlib.',
       image: '/color-picker.jpeg',
       link: 'https://github.com/risya22008/colorPicker'
-    }
+    },
+    {
+      title: 'E-Commerce Customer Behavior Dashboard',
+      description: 'An interactive Streamlit dashboard designed to analyze customer behavior from e-commerce sales data. It provides key insights through visualizations and metrics, including total transactions, number of customers, and overall sales performance. The dashboard highlights the top 10 best-selling products and tracks monthly sales trends. Additionally, it implements RFM (Recency, Frequency, Monetary) analysis combined with K-Means clustering to segment customers based on their purchasing behavior. Tech Stack: Python, Pandas, Streamlit, Matplotlib & Seaborn, Scikit-learn.',
+      image: '/e_commerce.jpeg',
+      link: 'https://github.com/risya22008/e-comerce_data-analisis',
+    },
   ];
 
   const certificate = [
