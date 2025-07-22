@@ -33,31 +33,57 @@ export default function ModernPortfolio() {
       title: 'AttentionAid',
       description: 'AttentionAid is a web-based application designed to help predict the likelihood of an individual experiencing Attention Deficit Hyperactivity Disorder (ADHD) based on responses to five psychological questionnaires: BDI, AUDIT, ASRS, AAS, and BAI. By utilizing Machine Learning algorithms such as Naive Bayes and K-Nearest Neighbors, the application provides an estimated ADHD risk level along with initial treatment recommendations, serving as a supportive tool before consulting a mental health professional.',
       image: '/attentionaid.jpeg',
-      link: 'https://github.com/risya22008/mini-proyek-adhd'
+      link: 'https://github.com/risya22008/mini-proyek-adhd',
+      type: 'ml',
     },
     {
       title: 'RAG-based Chatbot for Skin Disease Q&A',
       description: 'A Retrieval-Augmented Generation (RAG) chatbot built using FastAPI, LangChain, and ChromaDB, designed to answer user questions about skin diseases. It combines document retrieval and large language models (LLMs) to generate accurate, source-grounded responses. Documents are embedded with MiniLM and queried using LLaMA-3.3 (Groq) for efficient and contextual answers. Tech stack: FastAPI, LangChain, Chroma, HuggingFace, Groq API, Python.',
       image: '/chatbot-rag.jpeg',
-      link: 'https://github.com/risya22008/Chatbot-RAG'
+      link: 'https://github.com/risya22008/Chatbot-RAG',
+      type: 'ml',
     },
     {
       title: 'Image Segmentation App',
       description: 'A web-based application built with Streamlit that performs automatic image segmentation using the K-Means Clustering algorithm. It allows users to upload images, apply unsupervised clustering, and evaluate segmentation quality using the Silhouette Score. Designed for learning and visual exploration in computer vision and clustering.Tech stack: Python, Streamlit, OpenCV, scikit-learn, Pillow, Matplotlib.',
       image: '/image-segmentation.jpeg',
-      link: 'https://github.com/risya22008/mini-proyek-datmin'
+      link: 'https://github.com/risya22008/mini-proyek-datmin',
+      type: 'ml',
     },
     {
       title: 'Color Picker Generator',
       description: 'An interactive web app built with Streamlit that extracts the 8 most dominant colors from an uploaded image using K-Means Clustering. It displays the results in a clean color palette with both HEX and RGB formats. Ideal for designers, developers, or anyone looking to generate consistent color themes from visuals. Tech stack: Python, Streamlit, OpenCV, scikit-learn, Matplotlib.',
       image: '/color-picker.jpeg',
-      link: 'https://github.com/risya22008/colorPicker'
+      link: 'https://github.com/risya22008/colorPicker',
+      type: 'ml',
     },
     {
       title: 'E-Commerce Customer Behavior Dashboard',
       description: 'An interactive Streamlit dashboard designed to analyze customer behavior from e-commerce sales data. It provides key insights through visualizations and metrics, including total transactions, number of customers, and overall sales performance. The dashboard highlights the top 10 best-selling products and tracks monthly sales trends. Additionally, it implements RFM (Recency, Frequency, Monetary) analysis combined with K-Means clustering to segment customers based on their purchasing behavior. Tech Stack: Python, Pandas, Streamlit, Matplotlib & Seaborn, Scikit-learn.',
       image: '/e_commerce.jpeg',
       link: 'https://github.com/risya22008/e-comerce_data-analisis',
+      type: 'ml',
+    },
+    {
+      title: 'Jurnal Bumil',
+      description: 'is a web application that helps pregnant women monitor their pregnancy health independently and in coordination with midwives or medical professionals. Its main features include daily complaint tracking, check-up schedules, progress charts, pregnancy education, and online consultations with midwives. The application aims to enhance awareness, comfort, and safety for mothers throughout their pregnancy.',
+      image: '/jurnalBumil.jpeg',
+      link: 'https://github.com/risya22008/JurnalBumil',
+      type: 'web',
+    },
+    {
+      title: 'Tanya Berita',
+      description: 'is an AI-powered web application that delivers the latest news by category and features an intelligent chatbot. Users can browse news based on their interests (such as technology, economy, or sports) and ask questions related to the news content directly to the chatbot. The application is built with React for the frontend and TypeScript for the backend, integrated with a news API and AI model to provide context-based answers. Its goal is to offer an interactive and informative news-reading experience.',
+      image: '/tanyaBerita.jpeg',
+      link: 'https://github.com/risya22008/TanyaBerita',
+      type: 'web',
+    },
+    {
+      title: 'Web Pencarian Aksara Jawa',
+      description: 'is a Semantic Web-based application that allows users to search for Javanese vocabulary along with its script form, Latin transliteration, meaning, and example sentences. This application utilizes RDF and OWL technologies to build a structured vocabulary ontology, enabling semantic search and relationships between words. Its main goal is to help preserve local languages through an intelligent and structured digital system.',
+      image: '/aksaraJawa.jpeg',
+      link: 'https://github.com/risya22008/Web-Pencarian-Aksara-Jawa',
+      type: 'web',
     },
   ];
 
@@ -190,54 +216,67 @@ export default function ModernPortfolio() {
   ];
 
   const tools = [
-  { name: 'Python', icon: '🐍', description: 'Core programming language used across all projects' },
-  { name: 'Streamlit', icon: '🌐', description: 'Framework for building interactive web apps with Python' },
-  { name: 'NumPy', icon: '📊', description: 'Library for numerical operations and data manipulation' },
-  { name: 'Pandas', icon: '🧮', description: 'Used for data preprocessing, analysis, and transformation' },
-  { name: 'Matplotlib', icon: '📈', description: 'Used to visualize segmented color palettes and clustering results' },
-  { name: 'OpenCV', icon: '📷', description: 'Used for reading and converting image files in the color picker app' },
-  { name: 'scikit-learn', icon: '🧠', description: 'Used for implementing K-Means clustering and evaluation metrics' },
-  { name: 'TensorFlow', icon: '🔢', description: 'Core framework for building and training deep learning models' },
-  { name: 'Keras', icon: '🧬', description: 'High-level API for designing and training neural networks with TensorFlow' },
-  { name: 'TensorFlow Lite', icon: '📱', description: 'Used for deploying lightweight models to mobile and edge devices' },
-  { name: 'TensorFlow.js', icon: '💻', description: 'Used for running models directly in the browser' },
-  { name: 'FastAPI', icon: '⚡', description: 'Backend framework for building high-performance REST APIs' },
-  { name: 'LangChain', icon: '🔗', description: 'Framework for retrieval-augmented generation and LLM orchestration' },
-  { name: 'ChromaDB', icon: '🗂️', description: 'Vector database used for storing and retrieving document embeddings' },
-  { name: 'Hugging Face Embeddings', icon: '🤗', description: 'Generates semantic embeddings from documents for RAG workflows' },
-  { name: 'ChatGroq / LLaMA 3', icon: '🧠', description: 'Large Language Model used to answer user queries in AI chatbot' },
-  { name: 'Custom ML Algorithms', icon: '🔍', description: 'Naive Bayes and KNN manually implemented for educational purpose' },
-  { name: 'openpyxl', icon: '📘', description: 'Used to read Excel-based dataset for ADHD prediction' },
-  { name: 'Docker', icon: '🐳', description: 'Containerization for backend deployment and environment management' },
-  { name: 'Git & GitHub', icon: '🔧', description: 'Version control and collaboration platform used across projects' },
-  { name: 'Postman', icon: '📮', description: 'API testing and debugging tool for backend endpoints' },
-  { name: 'Jupyter Notebook', icon: '📓', description: 'Interactive environment for data exploration and prototyping' }
-];
+    // Web tools
+    { name: 'React', icon: '⚛️', description: 'Frontend library for building interactive UIs', type: 'web' },
+    { name: 'Tailwind CSS', icon: '🌈', description: 'Utility-first CSS framework for rapid UI development', type: 'web' },
+    { name: 'Vite', icon: '⚡', description: 'Dev server and build tool for modern web projects', type: 'web' },
+    { name: 'HTML5', icon: '🟠', description: 'Markup language for structuring web content', type: 'web' },
+    { name: 'CSS3', icon: '🔵', description: 'Styling language for designing web pages', type: 'web' },
+    { name: 'Node.js', icon: '🟢', description: 'Runtime environment for executing JavaScript on the server', type: 'web' },
+    { name: 'TypeScript', icon: '🔷', description: 'A statically typed programming language that enhances code reliability', type: 'web' },
+    { name: 'Express.js', icon: '⚡', description: 'A minimal and flexible backend framework for building RESTful APIs', type: 'web' },
+    { name: 'Firebase Auth', icon: '🔐', description: 'Handles user authentication, including registration, login, and email OTP verification', type: 'web' },
+    { name: 'Firestore', icon: '🔥', description: 'Firebase’s NoSQL database used to store user and content data', type: 'web' },
+    { name: 'Docker', icon: '🐳', description: 'Enables containerization and backend deployment', type: 'web' },
+    { name: 'Google Cloud Run', icon: '☁️', description: 'Cloud service for running containerized backend applications', type: 'web' },
+    { name: 'Postman', icon: '📮', description: 'Used for testing endpoints and debugging APIs', type: 'web' },
+    { name: 'Git & GitHub', icon: '🔧', description: 'Version control system and platform for collaborative development', type: 'web' },
+    // ML/Data Science tools
+    { name: 'Python', icon: '🐍', description: 'Core programming language used across all projects', type: 'ml' },
+    { name: 'Streamlit', icon: '🌐', description: 'Framework for building interactive web apps with Python', type: 'ml' },
+    { name: 'NumPy', icon: '📊', description: 'Library for numerical operations and data manipulation', type: 'ml' },
+    { name: 'Pandas', icon: '🧮', description: 'Used for data preprocessing, analysis, and transformation', type: 'ml' },
+    { name: 'Matplotlib', icon: '📈', description: 'Used to visualize segmented color palettes and clustering results', type: 'ml' },
+    { name: 'OpenCV', icon: '📷', description: 'Used for reading and converting image files in the color picker app', type: 'ml' },
+    { name: 'scikit-learn', icon: '🧠', description: 'Used for implementing K-Means clustering and evaluation metrics', type: 'ml' },
+    { name: 'TensorFlow', icon: '🔢', description: 'Core framework for building and training deep learning models', type: 'ml' },
+    { name: 'Keras', icon: '🧬', description: 'High-level API for designing and training neural networks with TensorFlow', type: 'ml' },
+    { name: 'TensorFlow Lite', icon: '📱', description: 'Used for deploying lightweight models to mobile and edge devices', type: 'ml' },
+    { name: 'TensorFlow.js', icon: '💻', description: 'Used for running models directly in the browser', type: 'ml' },
+    { name: 'FastAPI', icon: '⚡', description: 'Backend framework for building high-performance REST APIs', type: 'ml' },
+    { name: 'LangChain', icon: '🔗', description: 'Framework for retrieval-augmented generation and LLM orchestration', type: 'ml' },
+    { name: 'ChromaDB', icon: '🗂️', description: 'Vector database used for storing and retrieving document embeddings', type: 'ml' },
+    { name: 'Hugging Face Embeddings', icon: '🤗', description: 'Generates semantic embeddings from documents for RAG workflows', type: 'ml' },
+    { name: 'ChatGroq / LLaMA 3', icon: '🧠', description: 'Large Language Model used to answer user queries in AI chatbot', type: 'ml' },
+    { name: 'Custom ML Algorithms', icon: '🔍', description: 'Naive Bayes and KNN manually implemented for educational purpose', type: 'ml' },
+    { name: 'openpyxl', icon: '📘', description: 'Used to read Excel-based dataset for ADHD prediction', type: 'ml' },
+    { name: 'Jupyter Notebook', icon: '📓', description: 'Interactive environment for data exploration and prototyping', type: 'ml' }
+  ];
 
 
 
-const mlAndDataScienceSkills = [
-  'Building machine learning models from scratch (Naive Bayes, K-Nearest Neighbors, KMeans)',
-  'Performing data preprocessing using NumPy and Pandas (scaling, encoding, cleaning)',
-  'Evaluating model performance using F1-Score, Precision, Recall, and Silhouette Score',
-  'Creating interactive ML dashboards using Streamlit',
-  'Developing unsupervised learning applications for image segmentation and color extraction',
-  'Applying feature engineering techniques on psychological questionnaire datasets',
-  'Utilizing HuggingFace Transformers for generating semantic embeddings',
-  'Implementing Retrieval-Augmented Generation (RAG) pipelines using LangChain and ChromaDB',
-  'Handling data in multiple formats including Excel, CSV, and plain text',
-  'Deploying and integrating ML models into web applications for real-time inference',
-  'Training deep learning models using TensorFlow and Keras (DNN, CNN, RNN)',
-  'Designing and structuring end-to-end ML projects following best practices',
-  'Developing and deploying models on edge devices using TensorFlow Lite',
-  'Building browser-based models with TensorFlow.js',
-  'Creating custom layers, models, and loss functions in TensorFlow',
-  'Training models with distributed strategies and custom training loops',
-  'Applying linear algebra concepts for model optimization and understanding',
-  'Building time series forecasting models and sequence models using RNN/LSTM',
-  'Applying Natural Language Processing techniques using TensorFlow',
-  'Using Generative Adversarial Networks (GANs) for synthetic data generation'
-];
+  const mlAndDataScienceSkills = [
+    'Building machine learning models from scratch (Naive Bayes, K-Nearest Neighbors, KMeans)',
+    'Performing data preprocessing using NumPy and Pandas (scaling, encoding, cleaning)',
+    'Evaluating model performance using F1-Score, Precision, Recall, and Silhouette Score',
+    'Creating interactive ML dashboards using Streamlit',
+    'Developing unsupervised learning applications for image segmentation and color extraction',
+    'Applying feature engineering techniques on psychological questionnaire datasets',
+    'Utilizing HuggingFace Transformers for generating semantic embeddings',
+    'Implementing Retrieval-Augmented Generation (RAG) pipelines using LangChain and ChromaDB',
+    'Handling data in multiple formats including Excel, CSV, and plain text',
+    'Deploying and integrating ML models into web applications for real-time inference',
+    'Training deep learning models using TensorFlow and Keras (DNN, CNN, RNN)',
+    'Designing and structuring end-to-end ML projects following best practices',
+    'Developing and deploying models on edge devices using TensorFlow Lite',
+    'Building browser-based models with TensorFlow.js',
+    'Creating custom layers, models, and loss functions in TensorFlow',
+    'Training models with distributed strategies and custom training loops',
+    'Applying linear algebra concepts for model optimization and understanding',
+    'Building time series forecasting models and sequence models using RNN/LSTM',
+    'Applying Natural Language Processing techniques using TensorFlow',
+    'Using Generative Adversarial Networks (GANs) for synthetic data generation'
+  ];
 
   const experiences = [
     {
@@ -328,8 +367,8 @@ const mlAndDataScienceSkills = [
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
                   className={`px-4 py-2 rounded-lg transition-all duration-300 ${activeSection === item.id
-                      ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-                      : 'text-gray-300 hover:text-white hover:bg-white/10'
+                    ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
+                    : 'text-gray-300 hover:text-white hover:bg-white/10'
                     }`}
                 >
                   {item.label}
@@ -431,30 +470,51 @@ const mlAndDataScienceSkills = [
             <p className="text-gray-400">Some of my recent work</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105"
+          {/* Tabs for All, Web, ML */}
+          <div className="flex justify-center mb-8 gap-4">
+            {['All', 'Web', 'ML'].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setProjectTab(tab)}
+                className={`px-6 py-2 rounded-lg font-semibold transition-all duration-300 ${projectTab === tab ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30' : 'text-gray-300 hover:text-white hover:bg-white/10'}`}
               >
-                <div className={`w-60 h-40 bg-gradient-to-r ${project.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden`}>
-                  <img src={project.image} alt={project.title} className="w-40 h-30 object-contain" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors duration-300 text-sm font-medium"
-                >
-                  View Details
-                </a>
-              </div>
+                {tab}
+              </button>
             ))}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {projects
+              .filter((project) =>
+                projectTab === 'All' ? true :
+                  projectTab === 'Web' ? project.type === 'web' :
+                    projectTab === 'ML' ? project.type === 'ml' : true
+              )
+              .map((project, index) => (
+                <div
+                  key={index}
+                  className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105"
+                >
+                  <div className={`w-60 h-40 bg-gradient-to-r ${project.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden`}>
+                    <img src={project.image} alt={project.title} className="w-40 h-30 object-contain" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-gray-400 mb-4">{project.description}</p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors duration-300 text-sm font-medium"
+                  >
+                    View Details
+                  </a>
+                </div>
+              ))}
           </div>
         </div>
       </section>
+  // State untuk tab project
+      const [projectTab, setProjectTab] = useState('All');
 
       {/* Certificate Section */}
       <section id="certificates" className="py-20 px-6 relative">
@@ -501,24 +561,44 @@ const mlAndDataScienceSkills = [
             <p className="text-gray-400">Technologies I work with</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
-            {tools.map((tool, index) => (
-              <div
-                key={index}
-                className="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105"
+          {/* Tabs for Tools */}
+          <div className="flex justify-center mb-8 gap-4">
+            {['All', 'Web', 'ML'].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setToolsTab(tab)}
+                className={`px-6 py-2 rounded-lg font-semibold transition-all duration-300 ${toolsTab === tab ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30' : 'text-gray-300 hover:text-white hover:bg-white/10'}`}
               >
-                <div className="flex items-start gap-4">
-                  <div className="text-3xl group-hover:scale-110 transition-transform duration-300">
-                    {tool.icon}
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl mb-2 text-purple-300">{tool.name}</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed">{tool.description}</p>
-                  </div>
-                </div>
-              </div>
+                {tab}
+              </button>
             ))}
           </div>
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            {tools
+              .filter((tool) =>
+                toolsTab === 'All' ? true :
+                  toolsTab === 'Web' ? tool.type === 'web' :
+                    toolsTab === 'ML' ? tool.type === 'ml' : true
+              )
+              .map((tool, index) => (
+                <div
+                  key={index}
+                  className="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="text-3xl group-hover:scale-110 transition-transform duration-300">
+                      {tool.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl mb-2 text-purple-300">{tool.name}</h3>
+                      <p className="text-gray-400 text-sm leading-relaxed">{tool.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </div>
+  // State untuk tab tools
+          const [toolsTab, setToolsTab] = useState('All');
 
           {/* Skills Section */}
           <div className="bg-gray-800/30 rounded-2xl p-8 border border-gray-700/50">
@@ -530,6 +610,38 @@ const mlAndDataScienceSkills = [
                   className="flex items-start gap-3 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-all duration-300"
                 >
                   <div className="text-green-400 font-bold">✅</div>
+                  <p className="text-gray-300">{skill}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Web/Fullstack Development Skills Section */}
+          <div className="bg-gray-800/30 rounded-2xl p-8 border border-gray-700/50 mt-12">
+            <h3 className="text-3xl font-bold mb-8 text-center">🌐 Web & Fullstack Development Skills</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                'Building interactive UIs with React and Tailwind CSS',
+                'Developing RESTful APIs using Express',
+                'Managing authentication and authorization with Firebase',
+                'Implementing email verification with OTP',
+                'Performing CRUD operations and structuring Firestore collections',
+                'Handling filtering, pagination, and query parameters',
+                'Using middleware for input validation and logging',
+                'Utilizing environment variables for configuration and security',
+                'Deploying backend applications to Google Cloud Run with Docker',
+                'Debugging APIs using Postman',
+                'Using Git for version control and collaborative project management',
+                'Styling and responsive design with CSS3 and Tailwind',
+                'Frontend state management and hooks in React',
+                'Integrating frontend and backend with Vite proxy',
+                'Optimizing performance for both client and server side'
+              ].map((skill, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-3 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-all duration-300"
+                >
+                  <div className="text-blue-400 font-bold">✅</div>
                   <p className="text-gray-300">{skill}</p>
                 </div>
               ))}
