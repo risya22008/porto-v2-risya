@@ -4,6 +4,12 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaPhone } from 'react-ico
 export default function ModernPortfolio() {
   const [activeSection, setActiveSection] = useState('about');
   const [scrollY, setScrollY] = useState(0);
+  // State untuk tab project
+  const [projectTab, setProjectTab] = useState('All');
+  // State untuk tab tools
+  const [toolsTab, setToolsTab] = useState('All');
+  // State untuk tab skills
+  const [skillsTab, setSkillsTab] = useState('ML & Data Science');
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -472,7 +478,7 @@ export default function ModernPortfolio() {
 
           {/* Tabs for All, Web, ML */}
           <div className="flex justify-center mb-8 gap-4">
-            {['All', 'Web', 'ML'].map((tab) => (
+            {['All', 'Web', 'ML & data science'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setProjectTab(tab)}
@@ -513,8 +519,6 @@ export default function ModernPortfolio() {
           </div>
         </div>
       </section>
-  // State untuk tab project
-      const [projectTab, setProjectTab] = useState('All');
 
       {/* Certificate Section */}
       <section id="certificates" className="py-20 px-6 relative">
@@ -563,7 +567,7 @@ export default function ModernPortfolio() {
 
           {/* Tabs for Tools */}
           <div className="flex justify-center mb-8 gap-4">
-            {['All', 'Web', 'ML'].map((tab) => (
+            {['All', 'Web', 'ML & data science'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setToolsTab(tab)}
@@ -597,55 +601,68 @@ export default function ModernPortfolio() {
                 </div>
               ))}
           </div>
-  // State untuk tab tools
-          const [toolsTab, setToolsTab] = useState('All');
 
-          {/* Skills Section */}
+          {/* Skills Section with Tabs */}
           <div className="bg-gray-800/30 rounded-2xl p-8 border border-gray-700/50">
-            <h3 className="text-3xl font-bold mb-8 text-center">🛠️ Machine Learning & Data Science Skills</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              {mlAndDataScienceSkills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-all duration-300"
+            <div className="flex justify-center mb-8 gap-4">
+              {['ML & Data Science', 'Web & Fullstack'].map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setSkillsTab(tab)}
+                  className={`px-6 py-2 rounded-lg font-semibold transition-all duration-300 ${skillsTab === tab ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30' : 'text-gray-300 hover:text-white hover:bg-white/10'}`}
                 >
-                  <div className="text-green-400 font-bold">✅</div>
-                  <p className="text-gray-300">{skill}</p>
-                </div>
+                  {tab}
+                </button>
               ))}
             </div>
-          </div>
-
-          {/* Web/Fullstack Development Skills Section */}
-          <div className="bg-gray-800/30 rounded-2xl p-8 border border-gray-700/50 mt-12">
-            <h3 className="text-3xl font-bold mb-8 text-center">🌐 Web & Fullstack Development Skills</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              {[
-                'Building interactive UIs with React and Tailwind CSS',
-                'Developing RESTful APIs using Express',
-                'Managing authentication and authorization with Firebase',
-                'Implementing email verification with OTP',
-                'Performing CRUD operations and structuring Firestore collections',
-                'Handling filtering, pagination, and query parameters',
-                'Using middleware for input validation and logging',
-                'Utilizing environment variables for configuration and security',
-                'Deploying backend applications to Google Cloud Run with Docker',
-                'Debugging APIs using Postman',
-                'Using Git for version control and collaborative project management',
-                'Styling and responsive design with CSS3 and Tailwind',
-                'Frontend state management and hooks in React',
-                'Integrating frontend and backend with Vite proxy',
-                'Optimizing performance for both client and server side'
-              ].map((skill, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-all duration-300"
-                >
-                  <div className="text-blue-400 font-bold">✅</div>
-                  <p className="text-gray-300">{skill}</p>
+            {skillsTab === 'ML & Data Science' && (
+              <>
+                <h3 className="text-3xl font-bold mb-8 text-center">🛠️ Machine Learning & Data Science Skills</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {mlAndDataScienceSkills.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-3 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-all duration-300"
+                    >
+                      <div className="text-green-400 font-bold">✅</div>
+                      <p className="text-gray-300">{skill}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            )}
+            {skillsTab === 'Web & Fullstack' && (
+              <>
+                <h3 className="text-3xl font-bold mb-8 text-center">🌐 Web & Fullstack Development Skills</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {[
+                    'Building interactive UIs with React and Tailwind CSS',
+                    'Developing RESTful APIs using Express',
+                    'Managing authentication and authorization with Firebase',
+                    'Implementing email verification with OTP',
+                    'Performing CRUD operations and structuring Firestore collections',
+                    'Handling filtering, pagination, and query parameters',
+                    'Using middleware for input validation and logging',
+                    'Utilizing environment variables for configuration and security',
+                    'Deploying backend applications to Google Cloud Run with Docker',
+                    'Debugging APIs using Postman',
+                    'Using Git for version control and collaborative project management',
+                    'Styling and responsive design with CSS3 and Tailwind',
+                    'Frontend state management and hooks in React',
+                    'Integrating frontend and backend with Vite proxy',
+                    'Optimizing performance for both client and server side'
+                  ].map((skill, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-3 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-all duration-300"
+                    >
+                      <div className="text-blue-400 font-bold">✅</div>
+                      <p className="text-gray-300">{skill}</p>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
