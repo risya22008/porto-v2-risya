@@ -37,56 +37,73 @@ export default function ModernPortfolio() {
   const projects = [
     {
       title: 'Jurnal Bumil',
-      description: 'Jurnal Bumil is a collaborative web application designed to support pregnant women in monitoring their health, tracking daily complaints, viewing pregnancy progress, and consulting midwives online. This was a CLASS ASSIGNMENT (GROUP PROJECT – Role: Backend Developer). I was responsible for designing and implementing the backend system, including user authentication, complaint logging, check-up scheduling, and real-time midwife consultation endpoints. I worked closely with frontend and database developers to ensure seamless integration and secure data handling. This project deepened my understanding of healthcare workflows and reinforced the importance of user-centric design, secure API development, and team collaboration in building impactful health-tech solutions.',
+      description:
+        'Jurnal Bumil is a web application designed to assist pregnant women in monitoring their health and pregnancy journey more independently. It offers features such as daily complaint logging, check-up scheduling, pregnancy education, progress tracking charts, and online consultations with midwives.<br><br>' +
+        'This was a CLASS ASSIGNMENT (GROUP PROJECT – Role: Backend Developer). I focused on backend development using Express.js and Firebase. I implemented features like OTP-based email verification, complaint submission, schedule management, and midwife-IBU role registration/authentication. I also designed Firestore data schemas for structured medical records.<br><br>' +
+        'This project strengthened my backend engineering skills in a health-tech context and taught me how to apply authentication, data design, and role-based access for sensitive applications.',
       image: '/jurnalBumil.jpeg',
       link: 'https://github.com/risya22008/JurnalBumil',
       type: 'web',
     },
     {
       title: 'Tanya Berita',
-      description: 'Tanya Berita is an AI-powered news web application with category-based browsing and a chatbot that answers questions related to the content. This was a SELF-INITIATED (GROUP PROJECT – Role: Backend Developer). I developed REST APIs, integrated a news API, and built AI chatbot services using Groq API. The app makes news more interactive and personalized. I learned to design scalable APIs and apply AI to enhance media consumption.',
+      description: 'Tanya Berita is an AI-powered news web application that allows users to explore news articles by category and interact with a chatbot for content-related questions. The chatbot enhances the news-reading experience by making it more dynamic and personalized.<br><br>' +
+        'This was a SELF-INITIATED (GROUP PROJECT – Role: Backend Developer). I was responsible for developing RESTful APIs, integrating the external news API, and implementing a chatbot service using Groq API (LLaMA 3). I also worked on news filtering, pagination, and context-aware chat responses.<br><br>' +
+        'This project helped me improve my skills in scalable backend architecture, third-party API integration, and leveraging LLMs to build conversational features for media applications.',
       image: '/tanyaBerita.jpeg',
       link: 'https://github.com/risya22008/TanyaBerita',
       type: 'web',
     },
     {
-      title: 'Web Pencarian Aksara Jawa',
-      description: 'A Semantic Web application that enables users to search for Javanese vocabulary along with their script (Aksara Jawa), Latin transliteration, meaning, and usage examples. This was a CLASS ASSIGNMENT (GROUP PROJECT – Role: Ontology Designer & Backend Developer). I was responsible for designing the RDF/OWL ontology structure, modeling word categories and language levels, and implementing SPARQL queries for semantic search. I also developed the backend to serve search requests and connect the ontology with a user-facing application. This project strengthened my understanding of semantic technologies, digital language preservation, and how structured knowledge representation can power intelligent search and cultural heritage applications.',
+      title: 'Semantic Web – Javanese Vocabulary App',
+      description:
+        'A Semantic Web application that allows users to search for Javanese words with information such as script (Aksara Jawa), Latin transliteration, meaning, and example usage. The project aims to digitally preserve and provide structured access to local language knowledge.<br><br>' +
+        'This was a CLASS PROJECT (GROUP PROJECT – Role: Ontology Designer & Backend Developer). I designed the RDF/OWL vocabulary structure including classes for words, categories (e.g., verbs, nouns), and language levels (ngoko, krama, krama inggil). I also implemented SPARQL queries and the backend logic to serve data through a web API.<br><br>' +
+        'This project deepened my understanding of semantic technologies, data modeling, and cultural preservation through digital ontologies. I learned how to bridge traditional knowledge with modern search and retrieval systems.',
       image: '/aksaraJawa.jpeg',
-      link: 'https://github.com/risya22008/Web-Pencarian-Aksara-Jawa',
+      link: 'https://github.com/risya22008/aksara-jawa-rdf',
       type: 'web',
     },
     {
       title: 'RAG-based Chatbot for Skin Disease Q&A',
-      description: 'A Retrieval-Augmented Generation (RAG) chatbot that answers questions about skin diseases using FastAPI, LangChain, and ChromaDB. This was a SELF-INITIATED INDIVIDUAL PROJECT. I built an end-to-end system with document embedding, vector retrieval, and LLM-based generation. The chatbot provides contextual, source-based responses to users. I learned how to combine retrieval pipelines with LLMs for factual Q&A systems.',
+      description: 'A Retrieval-Augmented Generation (RAG) chatbot that answers questions about skin diseases using FastAPI, LangChain, and ChromaDB. The system leverages document embeddings and vector retrieval to deliver contextual, accurate responses based on trusted sources.<br><br>' +
+        'This was a SELF-INITIATED INDIVIDUAL PROJECT. I developed the full pipeline, including document ingestion, vector store setup, and LLM-based response generation. I also built the FastAPI backend to expose the chatbot service through a clean API interface.<br><br>' +
+        'From this project, I learned how to combine retrieval pipelines with LLMs to create factual Q&A systems. It strengthened my skills in LangChain, ChromaDB, and designing production-ready ML-powered APIs.',
       image: '/chatbot-rag.jpeg',
       link: 'https://github.com/risya22008/Chatbot-RAG',
       type: 'ml',
     },
     {
       title: 'AttentionAid',
-      description: 'AttentionAid is a web-based application that predicts the risk of ADHD using psychological questionnaire data (BDI, AUDIT, ASRS, AAS, and BAI) and Machine Learning algorithms such as Naive Bayes and K-Nearest Neighbors. This was a CLASS ASSIGNMENT (GROUP PROJECT – Role: Machine Learning Engineer). I developed predictive models and integrated the risk-level output into the user interface. My contribution helped ensure accurate results and meaningful feedback for users. From this project, I learned how to apply supervised learning in a mental health context and collaborate with a cross-functional team.',
+      description: 'The Image Segmentation App is a Streamlit-based web application that performs image segmentation using the K-Means clustering algorithm. Users can upload images and visualize segment results in real-time, enhanced by performance metrics like the Silhouette Score.<br><br>' +
+        'This was a CLASS ASSIGNMENT and a GROUP PROJECT. I implemented the K-Means algorithm, built interactive visualizations using Matplotlib and Streamlit, and evaluated clustering performance for interpretability.<br><br>' +
+        'This project allowed me to apply unsupervised learning to visual data and gain hands-on experience in building and deploying interactive ML apps. I also improved my teamwork skills and learned how to communicate technical results through UI effectively.',
       image: '/attentionaid.jpeg',
       link: 'https://github.com/risya22008/mini-proyek-adhd',
       type: 'ml',
     },
     {
       title: 'Image Segmentation App',
-      description: 'The Image Segmentation App is a web-based application built using Streamlit that enables automatic segmentation of images using K-Means clustering. This was a CLASS ASSIGNMENT and a GROUP PROJECT. My role was to implement the clustering algorithm, design interactive visualizations, and evaluate performance using the Silhouette Score. I contributed significantly to making the segmentation results interpretable and user-friendly through the web interface. Through this project, I explored unsupervised learning on image data and learned how to deploy machine learning pipelines using Streamlit. It helped me improve both my technical and collaboration skills while building something meaningful for visual experimentation.',
+      description: 'The Image Segmentation App is a Streamlit-based web application that performs image segmentation using the K-Means clustering algorithm. Users can upload images and visualize segment results in real-time, enhanced by performance metrics like the Silhouette Score.<br><br>' +
+        'This was a CLASS ASSIGNMENT and a GROUP PROJECT. I implemented the K-Means algorithm, built interactive visualizations using Matplotlib and Streamlit, and evaluated clustering performance for interpretability.<br><br>' +
+        'This project allowed me to apply unsupervised learning to visual data and gain hands-on experience in building and deploying interactive ML apps. I also improved my teamwork skills and learned how to communicate technical results through UI effectively.',
       image: '/image-segmentation.jpeg',
       link: 'https://github.com/risya22008/mini-proyek-datmin',
       type: 'ml',
     },
     {
       title: 'Color Picker Generator',
-      description: 'The Color Picker Generator is an interactive web application developed using Streamlit that extracts 8 dominant colors from an uploaded image using K-Means clustering. This was a CLASS ASSIGNMENT (INDIVIDUAL PROJECT). I designed and implemented the entire image processing pipeline, and built a clean user interface to display the resulting color palette in HEX and RGB formats. This project allowed me to creatively apply machine learning techniques particularly unsupervised learning to solve a visual and design-related problem. It was a fun way to bridge data science with digital creativity, and helped me develop both technical fluency and design sensibility. ',
+      description: 'The Color Picker Generator is an interactive web application developed using Streamlit that extracts 8 dominant colors from an uploaded image using K-Means clustering.<br><br>This was a CLASS ASSIGNMENT (INDIVIDUAL PROJECT). I handled the entire development process, including designing the image processing pipeline and building a clean, intuitive user interface. The app displays the resulting color palette in both HEX and RGB formats.<br><br>This project gave me a creative way to apply unsupervised machine learning in a real-world context. It allowed me to merge data science with digital design, sharpening both my technical fluency and visual sensibility.',
       image: '/color-picker.jpeg',
       link: 'https://github.com/risya22008/colorPicker',
       type: 'ml',
     },
     {
       title: 'E-Commerce Customer Behavior Dashboard',
-      description: 'The E-Commerce Customer Behavior Dashboard is a self-initiated individual project built with Streamlit that explores customer segmentation and behavior using RFM (Recency, Frequency, Monetary) analysis and K-Means clustering on e-commerce sales data. I independently handled the entire process—from data preprocessing and feature engineering to interactive dashboard design and customer segmentation. I created dynamic visualizations to uncover customer insights and support data-driven decisions, blending analytical skills with storytelling through visuals. This project reflects my curiosity to apply machine learning in real-world business contexts, and demonstrates my ability to independently manage a project from start to finish.',
+      description:
+        'A Streamlit-based dashboard designed to analyze e-commerce customer behavior through data-driven insights. It uses RFM (Recency, Frequency, Monetary) analysis and K-Means clustering to segment customers based on their purchasing habits.<br><br>' +
+        'This was a SELF-INITIATED (INDIVIDUAL PROJECT). I built the dashboard from scratch using Python, Pandas, Plotly, and Streamlit. I performed preprocessing, created visualizations, and implemented clustering to identify key customer segments. The dashboard allows for interactive exploration of data trends and customer types.<br><br>' +
+        'Through this project, I improved my skills in customer analytics, unsupervised learning, and visual communication for business decision-making. [GitHub](https://github.com/risya22008/e-comerce_data-analisis)',
       image: '/e_commerce.jpeg',
       link: 'https://github.com/risya22008/e-comerce_data-analisis',
       type: 'ml',
