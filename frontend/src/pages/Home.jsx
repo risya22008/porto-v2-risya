@@ -79,7 +79,7 @@ export default function ModernPortfolio() {
     },
     {
       title: 'Color Picker Generator',
-      description: 'The Color Picker Generator is an interactive web application developed using Streamlit that extracts 8 dominant colors from an uploaded image using K-Means clustering. This was a CLASS ASSIGNMENT (INDIVIDUAL PROJECT). I designed and implemented the entire image processing pipeline, and built a clean user interface to display the resulting color palette in HEX and RGB formats. This project allowed me to creatively apply machine learning techniques—particularly unsupervised learning—to solve a visual and design-related problem. It was a fun way to bridge data science with digital creativity, and helped me develop both technical fluency and design sensibility. ',
+      description: 'The Color Picker Generator is an interactive web application developed using Streamlit that extracts 8 dominant colors from an uploaded image using K-Means clustering. This was a CLASS ASSIGNMENT (INDIVIDUAL PROJECT). I designed and implemented the entire image processing pipeline, and built a clean user interface to display the resulting color palette in HEX and RGB formats. This project allowed me to creatively apply machine learning techniques particularly unsupervised learning to solve a visual and design-related problem. It was a fun way to bridge data science with digital creativity, and helped me develop both technical fluency and design sensibility. ',
       image: '/color-picker.jpeg',
       link: 'https://github.com/risya22008/colorPicker',
       type: 'ml',
