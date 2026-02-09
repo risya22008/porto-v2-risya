@@ -37,7 +37,7 @@ export default function ModernPortfolio() {
   const projects = [
     {
       title: 'Jurnal Bumil',
-      description:[
+      description: [
         'Jurnal Bumil is a web application designed to assist pregnant women in monitoring their health and pregnancy journey more independently. It offers features such as daily complaint logging, check-up scheduling, pregnancy education, progress tracking charts, and online consultations with midwives.',
         'This was a CLASS ASSIGNMENT (GROUP PROJECT – Role: Backend Developer). I focused on backend development using Express.js and Firebase. I implemented features like OTP-based email verification, complaint submission, schedule management, and midwife-IBU role registration/authentication. I also designed Firestore data schemas for structured medical records.',
         'This project strengthened my backend engineering skills in a health-tech context and taught me how to apply authentication, data design, and role-based access for sensitive applications.',
@@ -58,7 +58,7 @@ export default function ModernPortfolio() {
     },
     {
       title: 'Semantic Web – Javanese Vocabulary App',
-      description:[
+      description: [
         'A Semantic Web application that allows users to search for Javanese words with information such as script (Aksara Jawa), Latin transliteration, meaning, and example usage. The project aims to digitally preserve and provide structured access to local language knowledge.',
         'This was a CLASS PROJECT (GROUP PROJECT – Role: Ontology Designer & Backend Developer). I designed the RDF/OWL vocabulary structure including classes for words, categories (e.g., verbs, nouns), and language levels (ngoko, krama, krama inggil). I also implemented SPARQL queries and the backend logic to serve data through a web API.',
         'This project deepened my understanding of semantic technologies, data modeling, and cultural preservation through digital ontologies. I learned how to bridge traditional knowledge with modern search and retrieval systems.',
@@ -100,8 +100,8 @@ export default function ModernPortfolio() {
     {
       title: 'Color Picker Generator',
       description: ['The Color Picker Generator is an interactive web application developed using Streamlit that extracts 8 dominant colors from an uploaded image using K-Means clustering.',
-      'This was a CLASS ASSIGNMENT (INDIVIDUAL PROJECT). I handled the entire development process, including designing the image processing pipeline and building a clean, intuitive user interface. The app displays the resulting color palette in both HEX and RGB formats.',
-      'This project gave me a creative way to apply unsupervised machine learning in a real-world context. It allowed me to merge data science with digital design, sharpening both my technical fluency and visual sensibility.',
+        'This was a CLASS ASSIGNMENT (INDIVIDUAL PROJECT). I handled the entire development process, including designing the image processing pipeline and building a clean, intuitive user interface. The app displays the resulting color palette in both HEX and RGB formats.',
+        'This project gave me a creative way to apply unsupervised machine learning in a real-world context. It allowed me to merge data science with digital design, sharpening both my technical fluency and visual sensibility.',
       ],
       image: '/color-picker.jpeg',
       link: 'https://github.com/risya22008/colorPicker',
@@ -109,7 +109,7 @@ export default function ModernPortfolio() {
     },
     {
       title: 'E-Commerce Customer Behavior Dashboard',
-      description:[
+      description: [
         'A Streamlit-based dashboard designed to analyze e-commerce customer behavior through data-driven insights. It uses RFM (Recency, Frequency, Monetary) analysis and K-Means clustering to segment customers based on their purchasing habits.',
         'This was a SELF-INITIATED (INDIVIDUAL PROJECT). I built the dashboard from scratch using Python, Pandas, Plotly, and Streamlit. I performed preprocessing, created visualizations, and implemented clustering to identify key customer segments. The dashboard allows for interactive exploration of data trends and customer types.',
         'Through this project, I improved my skills in customer analytics, unsupervised learning, and visual communication for business decision-making.',
@@ -312,6 +312,19 @@ export default function ModernPortfolio() {
   ];
 
   const experiences = [
+    {
+      title: 'Data Scientist Intern · Internship',
+      company: 'Telekomunikasi Indonesia, Tbk',
+      period: 'Aug 2025 - Nov 2025',
+      description: [
+        'Developed parameter standardization within the application to ensure data consistency and reliability.',
+        'Built and maintained analytical dashboards to monitor active user behavior, support user management, and optimize operational decision-making.',
+        'Performed secure dashboard migration to a more protected, stable, and efficient environment, improving data security, access control, and overall system maintainability',
+        'Created and evaluated predictive models to forecast user activity trends and support data-driven planning.',
+        'Conducted quality assurance (QA) on standardized features after the development process to validate functionality and data accuracy.'
+      ],
+      image: '/Telkom.jpg',
+    },
     {
       title: 'Machine Learning Cohort · Apprenticeship',
       company: 'Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka',
