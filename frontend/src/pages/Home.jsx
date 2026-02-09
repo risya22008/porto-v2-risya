@@ -38,7 +38,7 @@ export default function ModernPortfolio() {
   {
       title: 'KangBuah Website',
       description: 'is a web-based fruit ordering platform that enables users to browse, order, and communicate directly with admins in real time. The system includes secure login and registration with email verification, order management for both users and admins, and a built-in chat feature for seamless interaction.',
-      image: '/kangbuah.png',
+      image: '/kangbuah.jpeg',
       link: 'https://github.com/devi22002/KangBuah', 
       type: 'web'
     },
