@@ -35,34 +35,30 @@ export default function ModernPortfolio() {
   ];
 
   const projects = [
+  {
+      title: 'KangBuah Website',
+      description: 'is a web-based fruit ordering platform that enables users to browse, order, and communicate directly with admins in real time. The system includes secure login and registration with email verification, order management for both users and admins, and a built-in chat feature for seamless interaction.',
+      image: '/kangbuah.png',
+      link: 'https://github.com/devi22002/KangBuah', 
+      type: 'web'
+    },
     {
       title: 'Jurnal Bumil',
-      description: [
-        'Jurnal Bumil is a web application designed to assist pregnant women in monitoring their health and pregnancy journey more independently. It offers features such as daily complaint logging, check-up scheduling, pregnancy education, progress tracking charts, and online consultations with midwives.',
-        'This was a CLASS ASSIGNMENT (GROUP PROJECT – Role: Backend Developer). I focused on backend development using Express.js and Firebase. I implemented features like OTP-based email verification, complaint submission, schedule management, and midwife-IBU role registration/authentication. I also designed Firestore data schemas for structured medical records.',
-        'This project strengthened my backend engineering skills in a health-tech context and taught me how to apply authentication, data design, and role-based access for sensitive applications.',
-      ],
+      description: 'is a web application that helps pregnant women monitor their pregnancy health independently and in coordination with midwives or medical professionals. Its main features include daily complaint tracking, check-up schedules, progress charts, pregnancy education, and online consultations with midwives. The application aims to enhance awareness, comfort, and safety for mothers throughout their pregnancy.',
       image: '/jurnalBumil.jpeg',
       link: 'https://github.com/risya22008/JurnalBumil',
       type: 'web',
     },
     {
       title: 'Tanya Berita',
-      description: ['Tanya Berita is an AI-powered news web application that allows users to explore news articles by category and interact with a chatbot for content-related questions. The chatbot enhances the news-reading experience by making it more dynamic and personalized.',
-        'This was a SELF-INITIATED (GROUP PROJECT – Role: Backend Developer). I was responsible for developing RESTful APIs, integrating the external news API, and implementing a chatbot service using Groq API (LLaMA 3). I also worked on news filtering, pagination, and context-aware chat responses.',
-        'This project helped me improve my skills in scalable backend architecture, third-party API integration, and leveraging LLMs to build conversational features for media applications.',
-      ],
+      description: 'is an AI-powered web application that delivers the latest news by category and features an intelligent chatbot. Users can browse news based on their interests (such as technology, economy, or sports) and ask questions related to the news content directly to the chatbot. The application is built with React for the frontend and TypeScript for the backend, integrated with a news API and AI model to provide context-based answers. Its goal is to offer an interactive and informative news-reading experience.',
       image: '/tanyaBerita.jpeg',
       link: 'https://github.com/risya22008/TanyaBerita',
       type: 'web',
     },
     {
       title: 'Semantic Web – Javanese Vocabulary App',
-      description: [
-        'A Semantic Web application that allows users to search for Javanese words with information such as script (Aksara Jawa), Latin transliteration, meaning, and example usage. The project aims to digitally preserve and provide structured access to local language knowledge.',
-        'This was a CLASS PROJECT (GROUP PROJECT – Role: Ontology Designer & Backend Developer). I designed the RDF/OWL vocabulary structure including classes for words, categories (e.g., verbs, nouns), and language levels (ngoko, krama, krama inggil). I also implemented SPARQL queries and the backend logic to serve data through a web API.',
-        'This project deepened my understanding of semantic technologies, data modeling, and cultural preservation through digital ontologies. I learned how to bridge traditional knowledge with modern search and retrieval systems.',
-      ],
+      description:'is a Semantic Web-based application that allows users to search for Javanese vocabulary along with its script form, Latin transliteration, meaning, and example sentences. This application utilizes RDF and OWL technologies to build a structured vocabulary ontology, enabling semantic search and relationships between words. Its main goal is to help preserve local languages through an intelligent and structured digital system.',
       image: '/aksaraJawa.jpeg',
       link: 'https://github.com/risya22008/aksara-jawa-rdf',
       type: 'web',
